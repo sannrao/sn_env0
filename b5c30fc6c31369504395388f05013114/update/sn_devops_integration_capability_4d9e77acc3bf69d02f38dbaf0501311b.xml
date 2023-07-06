@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_devops_integration_capability">
+    <sn_devops_integration_capability action="INSERT_OR_UPDATE">
+        <action display_value="Validate">ce23f50dc3251110137040d83c40dd3a</action>
+        <active>true</active>
+        <bulk_flow_name/>
+        <capability_mapping display_value="env0-Orchestration">99b50f4ac31369504395388f05013174</capability_mapping>
+        <sub_flow_name>x_snc_env0.env0_tool_validate</sub_flow_name>
+        <sys_class_name>sn_devops_integration_capability</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-06-30 05:51:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>4d9e77acc3bf69d02f38dbaf0501311b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_env0.env0_tool_validate</sys_name>
+        <sys_package display_value="env0" source="x_snc_env0">b5c30fc6c31369504395388f05013114</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope>
+        <sys_update_name>sn_devops_integration_capability_4d9e77acc3bf69d02f38dbaf0501311b</sys_update_name>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-06-30 05:51:48</sys_updated_on>
+        <timeout>45000</timeout>
+        <tool_integration display_value="env0">78958b4ac31369504395388f05013130</tool_integration>
+    </sn_devops_integration_capability>
+</record_update>

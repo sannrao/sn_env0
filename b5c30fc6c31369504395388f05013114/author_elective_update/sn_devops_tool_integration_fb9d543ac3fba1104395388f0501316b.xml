@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_devops_tool_integration">
+    <sn_devops_tool_integration action="DELETE">
+        <active>true</active>
+        <api_manager/>
+        <bulk_processing_capability/>
+        <integration_handler_name/>
+        <integration_version>v1</integration_version>
+        <seeded>false</seeded>
+        <sys_class_name>sn_devops_tool_integration</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-07-06 13:13:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>fb9d543ac3fba1104395388f0501316b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>env0</sys_name>
+        <sys_package display_value="env0" source="x_snc_env0">b5c30fc6c31369504395388f05013114</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope>
+        <sys_update_name>sn_devops_tool_integration_fb9d543ac3fba1104395388f0501316b</sys_update_name>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-07-06 13:15:02</sys_updated_on>
+        <tool>sn_devops_tool</tool>
+        <tool_label>env0</tool_label>
+        <tool_logo>47dd943ac3fba1104395388f05013155</tool_logo>
+        <tool_name>x_snc_env0_env0</tool_name>
+        <use_packageable_integrations>true</use_packageable_integrations>
+    </sn_devops_tool_integration>
+    <sys_attachment action="DELETE">
+        <average_image_color/>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/svg+xml</content_type>
+        <file_name>tool_logo</file_name>
+        <hash>a4f265c51e7e41e7514ac4e063140427d671f150b30ca250a4cb1c90be454f41</hash>
+        <image_height/>
+        <image_width/>
+        <size_bytes>4423</size_bytes>
+        <size_compressed>1847</size_compressed>
+        <state>available</state>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-07-06 13:14:35</sys_created_on>
+        <sys_id>47dd943ac3fba1104395388f05013155</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-07-06 13:14:36</sys_updated_on>
+        <table_name>ZZ_YYsn_devops_tool_integration</table_name>
+        <table_sys_id>fb9d543ac3fba1104395388f0501316b</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="DELETE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="tool_logo" sys_id="47dd943ac3fba1104395388f05013155">47dd943ac3fba1104395388f05013155</sys_attachment>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-07-06 13:14:35</sys_created_on>
+        <sys_id>87dd943ac3fba1104395388f05013155</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="DELETE">
+        <data>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</data>
+        <length>2452</length>
+        <position>1</position>
+        <sys_attachment display_value="tool_logo" sys_id="47dd943ac3fba1104395388f05013155">47dd943ac3fba1104395388f05013155</sys_attachment>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-07-06 13:14:35</sys_created_on>
+        <sys_id>0bdd943ac3fba1104395388f05013155</sys_id>
+    </sys_attachment_doc>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="env0">b5c30fc6c31369504395388f05013114</application>
+        <file_path/>
+        <instance_id>450160e7dbc9651837a0c59705961953</instance_id>
+        <instance_name>empsnrao1</instance_name>
+        <name>sn_devops_tool_integration_fb9d543ac3fba1104395388f0501316b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_devops_tool_integration"><sn_devops_tool_integration action="INSERT_OR_UPDATE"><active>true</active><api_manager/><bulk_processing_capability/><integration_handler_name/><integration_version>v1</integration_version><seeded>false</seeded><sys_class_name>sn_devops_tool_integration</sys_class_name><sys_created_by>santosh.nagaraja@snc</sys_created_by><sys_created_on>2023-07-06 13:13:43</sys_created_on><sys_domain>global</sys_domain><sys_id>fb9d543ac3fba1104395388f0501316b</sys_id><sys_mod_count>2</sys_mod_count><sys_name>env0</sys_name><sys_package display_value="env0" source="x_snc_env0">b5c30fc6c31369504395388f05013114</sys_package><sys_policy/><sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope><sys_update_name>sn_devops_tool_integration_fb9d543ac3fba1104395388f0501316b</sys_update_name><sys_updated_by>santosh.nagaraja@snc</sys_updated_by><sys_updated_on>2023-07-06 13:15:02</sys_updated_on><tool>sn_devops_tool</tool><tool_label>env0</tool_label><tool_logo>47dd943ac3fba1104395388f05013155</tool_logo><tool_name>x_snc_env0_env0</tool_name><use_packageable_integrations>true</use_packageable_integrations></sn_devops_tool_integration><sys_attachment action="INSERT_OR_UPDATE"><average_image_color/><chunk_size_bytes>700000</chunk_size_bytes><compressed>true</compressed><content_type>image/svg+xml</content_type><file_name>tool_logo</file_name><hash>a4f265c51e7e41e7514ac4e063140427d671f150b30ca250a4cb1c90be454f41</hash><image_height/><image_width/><size_bytes>4423</size_bytes><size_compressed>1847</size_compressed><state>available</state><sys_created_by>santosh.nagaraja@snc</sys_created_by><sys_created_on>2023-07-06 13:14:35</sys_created_on><sys_id>47dd943ac3fba1104395388f05013155</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2023-07-06 13:14:36</sys_updated_on><table_name>ZZ_YYsn_devops_tool_integration</table_name><table_sys_id>fb9d543ac3fba1104395388f0501316b</table_sys_id></sys_attachment><sys_attachment_doc action="INSERT_OR_UPDATE"><data>H4sIAAAAAAAAAA==</data><length>16</length><position>0</position><sys_attachment display_value="tool_logo" sys_id="47dd943ac3fba1104395388f05013155">47dd943ac3fba1104395388f05013155</sys_attachment><sys_created_by>santosh.nagaraja@snc</sys_created_by><sys_created_on>2023-07-06 13:14:35</sys_created_on><sys_id>87dd943ac3fba1104395388f05013155</sys_id></sys_attachment_doc><sys_attachment_doc action="INSERT_OR_UPDATE"><data>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</data><length>2452</length><position>1</position><sys_attachment display_value="tool_logo" sys_id="47dd943ac3fba1104395388f05013155">47dd943ac3fba1104395388f05013155</sys_attachment><sys_created_by>santosh.nagaraja@snc</sys_created_by><sys_created_on>2023-07-06 13:14:35</sys_created_on><sys_id>0bdd943ac3fba1104395388f05013155</sys_id></sys_attachment_doc></record_update>]]></payload>
+        <payload_hash>0</payload_hash>
+        <record_name>env0</record_name>
+        <reverted_from/>
+        <source>1745c70ac31369504395388f050131db</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-07-06 13:15:02</sys_created_on>
+        <sys_id>61fdd83ac3fba1104395388f050131c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1892b5781c40000001</sys_recorded_at>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-07-06 13:15:02</sys_updated_on>
+        <type>DevOps Tool Integration</type>
+        <update_guid>69fdd83ac4fba11099f19877f28208c7</update_guid>
+        <update_guid_history>69fdd83ac4fba11099f19877f28208c7:1039349979,83dd983a7bfba110d1c6ce4ef20c5c19:1565762921,43dd943aedfba11075f35cd00de0e658:461713608,9ead943a31fba110e542ef70ca6c5150:-257518855</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="env0">2bb328fec3fba1104395388f0501319c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-07-06 13:40:17</sys_created_on>
+        <sys_db_object display_value="" name="sn_devops_tool_integration">sn_devops_tool_integration</sys_db_object>
+        <sys_id>59118635dde8429eb794684ee4788d41</sys_id>
+        <sys_metadata>fb9d543ac3fba1104395388f0501316b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>env0</sys_name>
+        <sys_package display_value="env0" source="x_snc_env0">b5c30fc6c31369504395388f05013114</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope>
+        <sys_scope_delete display_value="">25f421291df643a59090a9366050ee89</sys_scope_delete>
+        <sys_update_name>sn_devops_tool_integration_fb9d543ac3fba1104395388f0501316b</sys_update_name>
+        <sys_update_version display_value="sn_devops_tool_integration_fb9d543ac3fba1104395388f0501316b">61fdd83ac3fba1104395388f050131c8</sys_update_version>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-07-06 13:40:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
