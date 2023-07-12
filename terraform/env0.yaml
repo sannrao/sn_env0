@@ -1,0 +1,56 @@
+version: 2
+
+deploy:
+  steps:
+    setupVariables:
+      after:
+        - name: setupVariables
+          run: |
+            echo "setupVariables"
+            ./notifyNow.sh "setupVariables" "" "building"
+            ./notifyNow.sh "setupVariables" "" "successful"
+            ./notifyNowArtifact.sh "setupVariables"
+            ./notifyPackage.sh "setupVariables"
+    terraformPlan:
+      before:
+        - name: Begin Plan
+          run: |
+            echo "Begin terraformPlan"
+            ./notifyNow.sh "terraformPlan" "setupVariables" "building"
+      after:
+        - name: Begin Security Scan
+          run: |
+            # simulate a scan
+            sleep 10  
+            echo "End terraformPlan"
+            ./notifyNow.sh "terraformPlan" "setupVariables" "successful"
+    terraformApply:
+      before:
+        - name: Begin terraformApply
+          run: |
+            echo "Begin terraformApply"
+            ./notifyNow.sh "terraformApply" "terraformPlan" "building"
+            ./notifyChangeControl.sh "terraformApply" "terraformPlan" 
+      after:
+        - name: Finish terraformApply 
+          run: |
+            echo "Finish terraformApply"
+            ./notifyNow.sh "terraformApply" "terraformPlan" "successful"
+
+
+    # "name": "git:clone",
+    # "name": "state:get",
+    # "name": "spec:load",
+    # "name": "set:vars",
+    # "name": "set:vars-after-0",  custom steps have this -after-0 notation
+    # "name": "set:version",
+    # "name": "template:init",
+    # "name": "tf:init",
+    # "name": "tf:workspace",
+    # "name": "tag",
+    # "name": "tf:plan",
+    # "name": "tf:plan-after-0",    "displayName": "KiCS Scan"
+    # "name": "tf:cost-estimation"
+    # "name": "tf:apply"
+    # "name": "tf:output"
+    # "name": "state:put",
