@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_env0.DevOpsOrchestrationEnv0IntegrationHandler</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Implements extension point sn_devops.DevOpsOrchestrationToolIntegrationHandler
+DevOpsOrchestrationToolIntegrationHandler - Endpoint Interface to determine right tool handler</description>
+        <name>DevOpsOrchestrationEnv0IntegrationHandler</name>
+        <script><![CDATA[var DevOpsOrchestrationEnv0IntegrationHandler = Class.create();
+DevOpsOrchestrationEnv0IntegrationHandler.prototype = {
+
+    /*
+    Validate if this is the right tool handler for a given tool name.
+    */
+    handleTool: function(toolName) {
+        return (toolName === 'x_snc_env0_env0');
+    },
+
+	setLoggingContext: function(refTable, appContext, relatedRecord) {
+        this.refTable = refTable;
+        this.appContext = appContext;
+        this.relatedRecord = relatedRecord;
+        this._logger = new sn_devops.DevOpsLogger('DevOpsOrchestrationToolTemplateIntegrationHandler', this.refTable, this.appContext, this.relatedRecord);
+    },
+
+    /*
+    Handle the orchestration tool notification event
+    */
+    handleEvent: function() {
+        throw 'Implement handleEvent()';
+    },
+
+    /*
+    Get the native id for the orchestration task, from stepMapping or changeControl request payloads
+    */
+    getNativeIdForOrchestrationTask: function(payload) {
+        return payload.orchestrationTaskName;
+    },
+
+    /*
+    Get the native id for the orchestration task, from an orchestration tool notification event payload
+    */
+    getNativeIdForOrchestrationTaskFromEvent: function() {
+        throw 'Implement getNativeIdForOrchestrationTaskFromEvent()';
+    },
+
+    /*
+    Get the url for the orchestration task, from an orchestration tool notification event payload
+    */
+    getOrchestrationTaskUrl: function() {
+        throw 'Implement getOrchestrationTaskUrl()';
+    },
+
+    /*
+    Get the native id for the task execution, from an orchestration tool notification event payload
+    */
+    getNativeIdForTaskExecution: function() {
+        throw 'Implement getNativeIdForTaskExecution()';
+    },
+
+    /*
+    Get the url for the task execution, from an orchestration tool notification event payload
+    */
+    getTaskExecutionUrl: function() {
+        throw 'Implement getTaskExecutionUrl()';
+    },
+
+    /*
+    Implement what should be done in case the given orchestration task is not under change control
+    */
+    resumeJob: function(payload, toolId, changeControl) {
+        gs.info("Call back using the url");
+    },
+
+    /*
+    Implement the sending of the callback response to the orchestration tool
+    */
+    notifyWithCallback: function() {
+        throw 'Implement notifyWithCallback()';
+    },
+
+    /*
+    Get the body of the callback response to be sent to the orchestration tool
+    */
+    getNotifyBodyForOrchTool: function() {
+        throw 'Implement getNotifyBodyForOrchTool()';
+    },
+
+    /*
+    Get unique callback glide record
+    */
+    getCallBack: function(callbackGr, payload) {
+        if(callbackGr && callbackGr.hasNext()){
+			return callbackGr.next();
+		}
+    },
+
+    /*
+    Perform any transformations to the callback request originated from the orchestration tool
+    */
+    transformCallbackRequest: function(payload, toolGr, pathParams, qParams) {
+        gs.info("transformCallbackRequest : " + JSON.stringify(payload));
+        return payload;
+    },
+
+    /*
+    Implement what should be done to handle the reattempt of callback request when callback record already exists 
+    */
+    handleCallbackReattempt: function() {
+        throw 'Implement handleCallbackReattempt()';
+    },
+
+    /*
+    Return true if stage name includes job name
+    */
+    stageNameIncludesJobName: function() {
+        return false;
+    },
+
+    /*
+    Implement what should be done when there are multiple runs for task execution in a pipeline and you want to resolve 
+    the correct task execution of a particular run. Default returns the first execution found.
+	This method excepts glide record result after performing .next() on the respective query.
+    */
+    getTaskExecutionBasedOnAttempt: function(taskExecutionsGr, attempt) {
+        return taskExecutionsGr;
+    },
+
+    /*
+    Return true if change control should be enabled irrespective of the step configuration
+    taskDetails: A json object for details of the step and orchestration task in followinng format
+    {
+    	'orchestrationTaskDefinitionId' : '<task definition sys_id>'
+    }
+    */
+    isChangeControlEnabledByDefault: function(taskDetails) {
+        return false;
+    },
+
+    /* Returns an array of Json objects representing the pagination information
+     * for each page that shall be created for input import request
+     * e.g. [{startDate: '1-1-2021', endDate: '2-1-2021'}, {startDate: '3-1-2021', endDate: '4-1-2021'}]
+     */
+    getImportRequestPageDetails: function(importGr) {
+        return [];
+	},
+	
+    getParamsForAppContext: function(payload, capabilityName) {
+        return response;
+    },
+
+    type: 'DevOpsOrchestrationEnv0IntegrationHandler'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-07-12 08:41:47</sys_created_on>
+        <sys_id>b1f81228c30cf9102f38dbaf050131bf</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>DevOpsOrchestrationEnv0IntegrationHandler</sys_name>
+        <sys_package display_value="env0" source="x_snc_env0">b5c30fc6c31369504395388f05013114</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope>
+        <sys_update_name>sys_script_include_b1f81228c30cf9102f38dbaf050131bf</sys_update_name>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-07-12 11:07:30</sys_updated_on>
+    </sys_script_include>
+</record_update>
