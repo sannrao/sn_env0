@@ -2,23 +2,35 @@ version: 2
 
 deploy:
   steps:
+    gitClone:
+      before:
+        - name: "git:clone"
+          run: |
+            ./notifyNow.sh "gitClone" "" "building"
+     after: 
+       - name: "git:clone"
+         run: |
+            ./notifyNow.sh "gitClone" "" "successful"
     setupVariables:
+      before: 
+        - name: 
+          run: |
+            ./notifyNow.sh "setupVariables" "gitClone" "building"
       after:
         - name: setupVariables
           run: |
-            echo "setupVariables"
-            ./notifyNow.sh "setupVariables" "" "building"
-            ./notifyNow.sh "setupVariables" "" "successful"
+            echo "setupVariables"            
+            ./notifyNow.sh "setupVariables" "gitClone" "successful"
             ./notifyNowArtifact.sh "setupVariables"
             ./notifyPackage.sh "setupVariables"
     terraformPlan:
       before:
-        - name: Begin Plan
+        - name: terraformPlan
           run: |
             echo "Begin terraformPlan"
             ./notifyNow.sh "terraformPlan" "setupVariables" "building"
       after:
-        - name: Begin Security Scan
+        - name: terraformPlan
           run: |
             # simulate a scan
             sleep 10  
@@ -26,19 +38,19 @@ deploy:
             ./notifyChangeControl.sh "terraformApply" "terraformPlan"            
     terraformApply:
       before:
-        - name: Begin terraformApply
+        - name: terraformApply
           run: |
             echo "Begin terraformApply"
             ./notifyNow.sh "terraformPlan" "setupVariables" "successful"
             ./notifyNow.sh "terraformApply" "terraformPlan" "building"            
       after:
-        - name: Finish terraformApply 
+        - name: terraformApply 
           run: |
             echo "Finish terraformApply"
             ./notifyNow.sh "terraformApply" "terraformPlan" "successful"
 
 
-    # "name": "git:clone",
+    
     # "name": "state:get",
     # "name": "spec:load",
     # "name": "set:vars",
