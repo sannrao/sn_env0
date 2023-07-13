@@ -3,14 +3,11 @@ version: 2
 deploy:
   steps:
     setupVariables:
-      before: 
-        - name: 
-          run: |
-            ./notifyNow.sh "setupVariables" "" "building"
       after:
         - name: setupVariables
           run: |
             echo "setupVariables"            
+            ./notifyNow.sh "setupVariables" "" "building"
             ./notifyNow.sh "setupVariables" "" "successful"
             ./notifyNowArtifact.sh "setupVariables"
             ./notifyPackage.sh "setupVariables"
