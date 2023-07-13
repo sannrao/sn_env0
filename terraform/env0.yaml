@@ -2,25 +2,16 @@ version: 2
 
 deploy:
   steps:
-    templateInit:
-      before:
-        - name: "template:init"
-          run: |
-            ./notifyNow.sh "template_init" "" "building"
-      after: 
-        - name: "git:clone"
-          run: |
-            ./notifyNow.sh "template_init" "" "successful"
     setupVariables:
       before: 
         - name: 
           run: |
-            ./notifyNow.sh "setupVariables" "template_init" "building"
+            ./notifyNow.sh "setupVariables" "" "building"
       after:
         - name: setupVariables
           run: |
             echo "setupVariables"            
-            ./notifyNow.sh "setupVariables" "template_init" "successful"
+            ./notifyNow.sh "setupVariables" "" "successful"
             ./notifyNowArtifact.sh "setupVariables"
             ./notifyPackage.sh "setupVariables"
     terraformPlan:
