@@ -23,7 +23,7 @@ deploy:
             # simulate a scan
             sleep 10  
             echo "End terraformPlan"
-            ./notifyChangeControl.sh "terraformApply" "terraformPlan"            
+            ./notifyChangeControl.sh "terraformPlan" "setupVariables"            
     terraformApply:
       before:
         - name: terraformApply
