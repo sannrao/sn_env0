@@ -2,7 +2,7 @@ version: 2
 
 deploy:
   steps:
-    gitClone:
+    templateInit:
       before:
         - name: "template:init"
           run: |
