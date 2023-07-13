@@ -4,23 +4,23 @@ deploy:
   steps:
     gitClone:
       before:
+        - name: "template:init"
+          run: |
+            ./notifyNow.sh "template_init" "" "building"
+      after: 
         - name: "git:clone"
           run: |
-            ./notifyNow.sh "gitClone" "" "building"
-     after: 
-       - name: "git:clone"
-         run: |
-            ./notifyNow.sh "gitClone" "" "successful"
+            ./notifyNow.sh "template_init" "" "successful"
     setupVariables:
       before: 
         - name: 
           run: |
-            ./notifyNow.sh "setupVariables" "gitClone" "building"
+            ./notifyNow.sh "setupVariables" "template_init" "building"
       after:
         - name: setupVariables
           run: |
             echo "setupVariables"            
-            ./notifyNow.sh "setupVariables" "gitClone" "successful"
+            ./notifyNow.sh "setupVariables" "template_init" "successful"
             ./notifyNowArtifact.sh "setupVariables"
             ./notifyPackage.sh "setupVariables"
     terraformPlan:
