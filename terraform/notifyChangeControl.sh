@@ -24,7 +24,7 @@ fi
 
 CHANGE_CONTROL="{
     \"toolId\": \"$TOOL_ID\",
-    \"callbackURL\": \"$PIPELINE_URL/$STEP_NAME/#$ENV0_DEPLOYMENT_LOG_ID\",
+    \"callbackURL\": \"https://api.env0.com/environments/deployments/$ENV0_DEPLOYMENT_LOG_ID\",
     \"orchestrationTaskURL\": \"$PIPELINE_URL/$STEP_NAME/\",
     \"orchestrationTaskName\": \"$ENV0_PROJECT_ID/$ENV0_ENVIRONMENT_NAME#$STEP_NAME\",
     \"orchestrationTaskDetails\": {
