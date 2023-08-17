@@ -1,0 +1,2312 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation>Evn0 Notify deployment status</annotation>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <ih_action>true</ih_action>
+        <internal_name>devopsenv0deploymentapprove</internal_name>
+        <label_cache>[{"name":"{{action.tool}}","label":"action➛tool","type":"action","ref":"","reference_display":"DevOps Tool","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.deployment_id}}","label":"action➛deployment_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.status}}","label":"action➛status","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.tool.connection_alias}}","label":"action➛Connection alias","type":"action","ref":"sys_alias","reference_display":"Connection alias","base_type":"reference","parent_table_name":"sn_devops_tool","column_name":"connection_alias","choices":null,"attributes":{}},{"name":"{{step[1aa563f1-01ae-4d43-b408-f54483d4fa46].status_code}}","label":"step➛REST step➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}}]</label_cache>
+        <master_snapshot>8800dcedc32035104395388f050131de</master_snapshot>
+        <name>DevOpsEnv0DeploymentApprove</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:01:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7645c425c32035104395388f05013104</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>DevOpsEnv0DeploymentApprove</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="env0" source="x_snc_env0">b5c30fc6c31369504395388f05013114</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_7645c425c32035104395388f05013104</sys_update_name>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 22:30:21</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=7645c425c32035104395388f05013104"/>
+    <sys_variable_value action="delete_multiple" query="document_key=7645c425c32035104395388f05013104"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>7645c425c32035104395388f05013104</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:46:30</sys_created_on>
+        <sys_id>2b7f04edc32035104395388f0501312e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:46:30</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"1cf572eb-c590-4a34-a138-40c1e56409e2\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">237f04edc32035104395388f05013122</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>7645c425c32035104395388f05013104</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:46:30</sys_created_on>
+        <sys_id>677f04edc32035104395388f0501312e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:46:30</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">2f7f04edc32035104395388f05013126</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7645c425c32035104395388f05013104"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>result</field>
+        <id>7645c425c32035104395388f05013104</id>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 22:30:12</sys_created_on>
+        <sys_id>7b791ca9c36035104395388f0501316b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 22:30:12</sys_updated_on>
+        <table>var__m_sys_hub_action_output_7645c425c32035104395388f05013104</table>
+        <value>{{step[1aa563f1-01ae-4d43-b408-f54483d4fa46].status_code}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>7645c425c32035104395388f05013104</id>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:46:30</sys_created_on>
+        <sys_id>e37f04edc32035104395388f0501312e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:46:30</sys_updated_on>
+        <table>var__m_sys_hub_action_output_7645c425c32035104395388f05013104</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>7645c425c32035104395388f05013104</id>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:46:30</sys_created_on>
+        <sys_id>237f04edc32035104395388f0501312e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:46:30</sys_updated_on>
+        <table>var__m_sys_hub_action_output_7645c425c32035104395388f05013104</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=7645c425c32035104395388f05013104^sys_idNOT IN9abec4adc32035104395388f05013100"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="DevOpsEnv0DeploymentApprove">7645c425c32035104395388f05013104</action>
+        <cid>1aa563f1-01ae-4d43-b408-f54483d4fa46</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:43:09</sys_created_on>
+        <sys_id>9abec4adc32035104395388f05013100</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:46:29</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9abec4adc32035104395388f05013100"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9abec4adc32035104395388f05013100</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:43:09</sys_created_on>
+        <sys_id>2abec4adc32035104395388f0501312d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:43:09</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Headers">15288f755bd24110ab933520b881c713</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9abec4adc32035104395388f05013100</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:43:09</sys_created_on>
+        <sys_id>2abec4adc32035104395388f0501312e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:43:09</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9abec4adc32035104395388f05013100</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:43:09</sys_created_on>
+        <sys_id>66bec4adc32035104395388f0501312e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:43:09</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9abec4adc32035104395388f05013100</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:46:29</sys_created_on>
+        <sys_id>677f04edc32035104395388f0501311d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:46:29</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9abec4adc32035104395388f05013100</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:43:09</sys_created_on>
+        <sys_id>a2bec4adc32035104395388f0501312e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:43:09</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9abec4adc32035104395388f05013100</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:46:29</sys_created_on>
+        <sys_id>a37f04edc32035104395388f0501311d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:46:29</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9abec4adc32035104395388f05013100</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:43:09</sys_created_on>
+        <sys_id>eebec4adc32035104395388f0501312d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:43:09</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9abec4adc32035104395388f05013100</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:46:29</sys_created_on>
+        <sys_id>ef7f04edc32035104395388f0501311c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:46:29</sys_updated_on>
+        <value>put</value>
+        <variable display_value="HTTP Method">e85b7ebf47222200b4fad7527c9a71e3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_9abec4adc32035104395388f05013100^id=9abec4adc32035104395388f05013100"/>
+    <sys_element_mapping action="delete_multiple" query="id=9abec4adc32035104395388f05013100"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>9abec4adc32035104395388f05013100</id>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:43:09</sys_created_on>
+        <sys_id>e2bec4adc32035104395388f0501312d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:43:09</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>9abec4adc32035104395388f05013100</id>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:43:09</sys_created_on>
+        <sys_id>22bec4adc32035104395388f0501312d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:43:09</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>9abec4adc32035104395388f05013100</id>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:46:29</sys_created_on>
+        <sys_id>e77f04edc32035104395388f0501311c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:46:29</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{action.tool.connection_alias}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_timeout</field>
+        <id>9abec4adc32035104395388f05013100</id>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:43:09</sys_created_on>
+        <sys_id>a6bec4adc32035104395388f0501312d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:43:09</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>9abec4adc32035104395388f05013100</id>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:46:29</sys_created_on>
+        <sys_id>ab7f04edc32035104395388f0501311c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:46:29</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_headers</field>
+        <id>9abec4adc32035104395388f05013100</id>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:43:09</sys_created_on>
+        <sys_id>a6bec4adc32035104395388f0501312c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:43:09</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_query_params</field>
+        <id>9abec4adc32035104395388f05013100</id>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:43:09</sys_created_on>
+        <sys_id>6ebec4adc32035104395388f0501312c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:43:09</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>http_method</field>
+        <id>9abec4adc32035104395388f05013100</id>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:46:29</sys_created_on>
+        <sys_id>277f04edc32035104395388f0501311c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:46:29</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>9abec4adc32035104395388f05013100</id>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:46:29</sys_created_on>
+        <sys_id>6f7f04edc32035104395388f0501311c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:46:29</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=9abec4adc32035104395388f05013100"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=9abec4adc32035104395388f05013100"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=9abec4adc32035104395388f05013100^sys_idNOT IN177f04edc32035104395388f05013111"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=ec873c88-c9e1-4466-85f8-459740c31ad5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="REST step">9abec4adc32035104395388f05013100</model>
+        <model_id>9abec4adc32035104395388f05013100</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_9abec4adc32035104395388f05013100</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:46:29</sys_created_on>
+        <sys_id>177f04edc32035104395388f05013111</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:47:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9abec4adc32035104395388f05013100^sys_idNOT IN66bec4adc32035104395388f05013129"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>resource_path</input_name>
+        <instance>9abec4adc32035104395388f05013100</instance>
+        <referenced_table>sys_hub_step_instance</referenced_table>
+        <script>{"resource_path":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value. \n**Order number is offset by +1 in Error Handling Section.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n\nvar resourcePath \u003d  \"environments/deployments/\" + fd_data.action_inputs.deployment_id\n\n \nif( fd_data.action_inputs.status \u003d\u003d\u003d \"cancel\" ) {\n    resourcePath \u003d resourcePath  + \"/cancel\"\n}\n\nreturn resourcePath;"}}</script>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:43:09</sys_created_on>
+        <sys_id>66bec4adc32035104395388f05013129</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:46:29</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_9abec4adc32035104395388f05013100^sys_idNOT IN9b7f04edc32035104395388f05013114"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sn_auth_token</element>
+        <help/>
+        <hint/>
+        <label>Credential Value</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_9abec4adc32035104395388f05013100</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:46:29</sys_created_on>
+        <sys_id>9b7f04edc32035104395388f05013114</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="env0" source="x_snc_env0">b5c30fc6c31369504395388f05013114</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:46:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=7645c425c32035104395388f05013104^sys_idNOT IN1abe84adc32035104395388f050131f7,1ebe84adc32035104395388f050131ee,d2be84adc32035104395388f050131fb"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=eb2b9192-d630-479a-85f3-e4f3c7819b2f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>deployment_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>deployment_id</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="DevOpsEnv0DeploymentApprove">7645c425c32035104395388f05013104</model>
+        <model_id>7645c425c32035104395388f05013104</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_7645c425c32035104395388f05013104</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:43:08</sys_created_on>
+        <sys_id>1abe84adc32035104395388f050131f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:43:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1abe84adc32035104395388f050131f7"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=a2950d6b-2d11-4a13-ad80-f0c7d1c14970</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sn_devops_tool</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>tool</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>tool</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="DevOpsEnv0DeploymentApprove">7645c425c32035104395388f05013104</model>
+        <model_id>7645c425c32035104395388f05013104</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_7645c425c32035104395388f05013104</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sn_devops_tool">sn_devops_tool</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:43:08</sys_created_on>
+        <sys_id>1ebe84adc32035104395388f050131ee</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:43:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1ebe84adc32035104395388f050131ee"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=a369025d-f54f-4364-83f9-6c28a1edf154</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>status</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="DevOpsEnv0DeploymentApprove">7645c425c32035104395388f05013104</model>
+        <model_id>7645c425c32035104395388f05013104</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_7645c425c32035104395388f05013104</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:43:08</sys_created_on>
+        <sys_id>d2be84adc32035104395388f050131fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:43:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d2be84adc32035104395388f050131fb"/>
+    <sys_hub_action_output action="delete_multiple" query="model=7645c425c32035104395388f05013104^sys_idNOT IN237f04edc32035104395388f05013122,2f7f04edc32035104395388f05013126,3f791ca9c36035104395388f0501315b"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=5ad405f9-1f6a-478a-bd3a-25d024051e9d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="DevOpsEnv0DeploymentApprove">7645c425c32035104395388f05013104</model>
+        <model_id>7645c425c32035104395388f05013104</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_7645c425c32035104395388f05013104</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:46:29</sys_created_on>
+        <sys_id>237f04edc32035104395388f05013122</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 22:30:12</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=237f04edc32035104395388f05013122"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=237f04edc32035104395388f05013122"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=1d6e9c03-48fa-449e-8e8f-1cd3810a696d,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="DevOpsEnv0DeploymentApprove">7645c425c32035104395388f05013104</model>
+        <model_id>7645c425c32035104395388f05013104</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_7645c425c32035104395388f05013104</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:46:30</sys_created_on>
+        <sys_id>2f7f04edc32035104395388f05013126</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 22:30:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2f7f04edc32035104395388f05013126"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2f7f04edc32035104395388f05013126"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=14f4b26d-e041-4d68-866f-34217f98681d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>result</element>
+        <element_prototype display_value="Status Code" element="status_code" name="var__m_sys_flow_step_definition_output_07a762fb47222200b4fad7527c9a7129">a053077347622200b4fad7527c9a716e</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>result</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="DevOpsEnv0DeploymentApprove">7645c425c32035104395388f05013104</model>
+        <model_id>7645c425c32035104395388f05013104</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_7645c425c32035104395388f05013104</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 22:30:12</sys_created_on>
+        <sys_id>3f791ca9c36035104395388f0501315b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 22:30:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3f791ca9c36035104395388f0501315b"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3f791ca9c36035104395388f0501315b"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=7645c425c32035104395388f05013104"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=7645c425c32035104395388f05013104^sys_idNOT IN62bec4adc32035104395388f05013134"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="DevOpsEnv0DeploymentApprove">7645c425c32035104395388f05013104</action_type_id>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:43:09</sys_created_on>
+        <sys_id>62bec4adc32035104395388f05013134</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:43:09</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=62bec4adc32035104395388f05013134"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_7645c425c32035104395388f05013104^sys_idNOT IN52be84adc32035104395388f050131fe,96be84adc32035104395388f050131f6,96be84adc32035104395388f050131fa"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>status</element>
+        <help/>
+        <hint/>
+        <label>status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_7645c425c32035104395388f05013104</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:43:08</sys_created_on>
+        <sys_id>52be84adc32035104395388f050131fe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="env0" source="x_snc_env0">b5c30fc6c31369504395388f05013114</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:43:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>tool</element>
+        <help/>
+        <hint/>
+        <label>tool</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_7645c425c32035104395388f05013104</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:43:08</sys_created_on>
+        <sys_id>96be84adc32035104395388f050131f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="env0" source="x_snc_env0">b5c30fc6c31369504395388f05013114</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:43:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>deployment_id</element>
+        <help/>
+        <hint/>
+        <label>deployment_id</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_7645c425c32035104395388f05013104</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:43:08</sys_created_on>
+        <sys_id>96be84adc32035104395388f050131fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="env0" source="x_snc_env0">b5c30fc6c31369504395388f05013114</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:43:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_7645c425c32035104395388f05013104"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_7645c425c32035104395388f05013104^sys_idNOT IN37791ca9c36035104395388f0501315f,6b7f04edc32035104395388f0501312b,ef7f04edc32035104395388f05013125"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>result</element>
+        <help/>
+        <hint/>
+        <label>result</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_7645c425c32035104395388f05013104</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 22:30:12</sys_created_on>
+        <sys_id>37791ca9c36035104395388f0501315f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="env0" source="x_snc_env0">b5c30fc6c31369504395388f05013114</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 22:30:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_7645c425c32035104395388f05013104</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:46:30</sys_created_on>
+        <sys_id>6b7f04edc32035104395388f0501312b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="env0" source="x_snc_env0">b5c30fc6c31369504395388f05013114</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:46:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_7645c425c32035104395388f05013104</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:46:30</sys_created_on>
+        <sys_id>ef7f04edc32035104395388f05013125</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="env0" source="x_snc_env0">b5c30fc6c31369504395388f05013114</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:46:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_7645c425c32035104395388f05013104"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=7645c425c32035104395388f05013104^sys_idNOT INe0005021c36035104395388f05013106"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="DevOpsEnv0DeploymentApprove">7645c425c32035104395388f05013104</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"e0005021c36035104395388f05013106","name":"plan","plan_signature":null}}</plan>
+        <snapshot>3d899ca9c36035104395388f05013153</snapshot>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e0005021c36035104395388f05013106</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 22:30:23</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation>Evn0 Notify deployment status</annotation>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>devopsenv0deploymentapprove</internal_name>
+        <label_cache>[{"name":"{{action.tool}}","label":"action➛tool","type":"action","ref":"","reference_display":"DevOps Tool","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.deployment_id}}","label":"action➛deployment_id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.status}}","label":"action➛status","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.tool.connection_alias}}","label":"action➛Connection alias","type":"action","ref":"sys_alias","reference_display":"Connection alias","base_type":"reference","parent_table_name":"sn_devops_tool","column_name":"connection_alias","choices":null,"attributes":{}},{"name":"{{step[1aa563f1-01ae-4d43-b408-f54483d4fa46].status_code}}","label":"step➛REST step➛Status Code","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}}]</label_cache>
+        <master>true</master>
+        <name>DevOpsEnv0DeploymentApprove</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="DevOpsEnv0DeploymentApprove">7645c425c32035104395388f05013104</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8800dcedc32035104395388f050131de</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 22:30:20</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=8800dcedc32035104395388f050131de"/>
+    <sys_variable_value action="delete_multiple" query="document_key=8800dcedc32035104395388f050131de"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>8800dcedc32035104395388f050131de</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:44</sys_created_on>
+        <sys_id>1c001021c36035104395388f05013114</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:48:44</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"1cf572eb-c590-4a34-a138-40c1e56409e2\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">80001021c36035104395388f05013109</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>8800dcedc32035104395388f050131de</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:44</sys_created_on>
+        <sys_id>58001021c36035104395388f05013114</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:48:44</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">c4001021c36035104395388f0501310d</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8800dcedc32035104395388f050131de"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>result</field>
+        <id>8800dcedc32035104395388f050131de</id>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 22:30:21</sys_created_on>
+        <sys_id>f5899ca9c36035104395388f05013151</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 22:30:21</sys_updated_on>
+        <table>var__m_sys_hub_action_output_8800dcedc32035104395388f050131de</table>
+        <value>{{step[1aa563f1-01ae-4d43-b408-f54483d4fa46].status_code}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>8800dcedc32035104395388f050131de</id>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:44</sys_created_on>
+        <sys_id>d4001021c36035104395388f05013114</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:48:44</sys_updated_on>
+        <table>var__m_sys_hub_action_output_8800dcedc32035104395388f050131de</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>8800dcedc32035104395388f050131de</id>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:44</sys_created_on>
+        <sys_id>14001021c36035104395388f05013114</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:48:44</sys_updated_on>
+        <table>var__m_sys_hub_action_output_8800dcedc32035104395388f050131de</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=8800dcedc32035104395388f050131de^sys_idNOT INcc00dcedc32035104395388f050131ef"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="DevOpsEnv0DeploymentApprove">8800dcedc32035104395388f050131de</action>
+        <cid>1aa563f1-01ae-4d43-b408-f54483d4fa46</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:43</sys_created_on>
+        <sys_id>cc00dcedc32035104395388f050131ef</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:48:43</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=cc00dcedc32035104395388f050131ef"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>cc00dcedc32035104395388f050131ef</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:43</sys_created_on>
+        <sys_id>04001021c36035104395388f05013104</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:48:43</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>cc00dcedc32035104395388f050131ef</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:43</sys_created_on>
+        <sys_id>08001021c36035104395388f05013103</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:48:43</sys_updated_on>
+        <value>put</value>
+        <variable display_value="HTTP Method">e85b7ebf47222200b4fad7527c9a71e3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>cc00dcedc32035104395388f050131ef</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:43</sys_created_on>
+        <sys_id>40001021c36035104395388f05013104</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:48:43</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>cc00dcedc32035104395388f050131ef</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:43</sys_created_on>
+        <sys_id>44001021c36035104395388f05013103</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:48:43</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>cc00dcedc32035104395388f050131ef</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:43</sys_created_on>
+        <sys_id>80001021c36035104395388f05013103</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:48:43</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Headers">15288f755bd24110ab933520b881c713</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>cc00dcedc32035104395388f050131ef</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:43</sys_created_on>
+        <sys_id>8c001021c36035104395388f05013103</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:48:43</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>cc00dcedc32035104395388f050131ef</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:43</sys_created_on>
+        <sys_id>c4001021c36035104395388f05013104</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:48:43</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>cc00dcedc32035104395388f050131ef</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:43</sys_created_on>
+        <sys_id>c8001021c36035104395388f05013103</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:48:43</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_cc00dcedc32035104395388f050131ef^id=cc00dcedc32035104395388f050131ef"/>
+    <sys_element_mapping action="delete_multiple" query="id=cc00dcedc32035104395388f050131ef"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>cc00dcedc32035104395388f050131ef</id>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:43</sys_created_on>
+        <sys_id>88001021c36035104395388f05013102</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:48:43</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>cc00dcedc32035104395388f050131ef</id>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:43</sys_created_on>
+        <sys_id>c4001021c36035104395388f05013102</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:48:43</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>cc00dcedc32035104395388f050131ef</id>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:43</sys_created_on>
+        <sys_id>40001021c36035104395388f05013102</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:48:43</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{{action.tool.connection_alias}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_timeout</field>
+        <id>cc00dcedc32035104395388f050131ef</id>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:43</sys_created_on>
+        <sys_id>00001021c36035104395388f05013103</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:48:43</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>cc00dcedc32035104395388f050131ef</id>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:43</sys_created_on>
+        <sys_id>04001021c36035104395388f05013102</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:48:43</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_headers</field>
+        <id>cc00dcedc32035104395388f050131ef</id>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:43</sys_created_on>
+        <sys_id>08001021c36035104395388f05013101</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:48:43</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_query_params</field>
+        <id>cc00dcedc32035104395388f050131ef</id>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:43</sys_created_on>
+        <sys_id>c8001021c36035104395388f05013101</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:48:43</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>http_method</field>
+        <id>cc00dcedc32035104395388f050131ef</id>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:43</sys_created_on>
+        <sys_id>8c001021c36035104395388f05013101</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:48:43</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>cc00dcedc32035104395388f050131ef</id>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:43</sys_created_on>
+        <sys_id>4c001021c36035104395388f05013102</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:48:43</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=cc00dcedc32035104395388f050131ef"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=cc00dcedc32035104395388f050131ef"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=cc00dcedc32035104395388f050131ef^sys_idNOT IN0800dcedc32035104395388f050131f7"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=ec873c88-c9e1-4466-85f8-459740c31ad5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="REST step">cc00dcedc32035104395388f050131ef</model>
+        <model_id>cc00dcedc32035104395388f050131ef</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_cc00dcedc32035104395388f050131ef</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:43</sys_created_on>
+        <sys_id>0800dcedc32035104395388f050131f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:48:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=cc00dcedc32035104395388f050131ef^sys_idNOT IN4400dcedc32035104395388f050131ff"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>resource_path</input_name>
+        <instance>cc00dcedc32035104395388f050131ef</instance>
+        <referenced_table>sys_hub_step_instance</referenced_table>
+        <script>{"resource_path":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value. \n**Order number is offset by +1 in Error Handling Section.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n\nvar resourcePath \u003d  \"environments/deployments/\" + fd_data.action_inputs.deployment_id\n\n \nif( fd_data.action_inputs.status \u003d\u003d\u003d \"cancel\" ) {\n    resourcePath \u003d resourcePath  + \"/cancel\"\n}\n\nreturn resourcePath;"}}</script>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:43</sys_created_on>
+        <sys_id>4400dcedc32035104395388f050131ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:48:43</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_cc00dcedc32035104395388f050131ef^sys_idNOT IN8800dcedc32035104395388f050131fa"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sn_auth_token</element>
+        <help/>
+        <hint/>
+        <label>Credential Value</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_cc00dcedc32035104395388f050131ef</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:43</sys_created_on>
+        <sys_id>8800dcedc32035104395388f050131fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="env0" source="x_snc_env0">b5c30fc6c31369504395388f05013114</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:48:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=8800dcedc32035104395388f050131de^sys_idNOT IN4800dcedc32035104395388f050131ea,4c00dcedc32035104395388f050131e1,cc00dcedc32035104395388f050131e6"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=a369025d-f54f-4364-83f9-6c28a1edf154</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>status</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>status</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="DevOpsEnv0DeploymentApprove">8800dcedc32035104395388f050131de</model>
+        <model_id>8800dcedc32035104395388f050131de</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_8800dcedc32035104395388f050131de</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:43</sys_created_on>
+        <sys_id>4800dcedc32035104395388f050131ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:48:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4800dcedc32035104395388f050131ea"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=a2950d6b-2d11-4a13-ad80-f0c7d1c14970</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sn_devops_tool</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>tool</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>tool</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="DevOpsEnv0DeploymentApprove">8800dcedc32035104395388f050131de</model>
+        <model_id>8800dcedc32035104395388f050131de</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_8800dcedc32035104395388f050131de</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sn_devops_tool">sn_devops_tool</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:43</sys_created_on>
+        <sys_id>4c00dcedc32035104395388f050131e1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:48:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4c00dcedc32035104395388f050131e1"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=eb2b9192-d630-479a-85f3-e4f3c7819b2f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>deployment_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>deployment_id</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="DevOpsEnv0DeploymentApprove">8800dcedc32035104395388f050131de</model>
+        <model_id>8800dcedc32035104395388f050131de</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_8800dcedc32035104395388f050131de</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:43</sys_created_on>
+        <sys_id>cc00dcedc32035104395388f050131e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:48:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=cc00dcedc32035104395388f050131e6"/>
+    <sys_hub_action_output action="delete_multiple" query="model=8800dcedc32035104395388f050131de^sys_idNOT IN80001021c36035104395388f05013109,c4001021c36035104395388f0501310d,f9899ca9c36035104395388f05013141"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=5ad405f9-1f6a-478a-bd3a-25d024051e9d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="DevOpsEnv0DeploymentApprove">8800dcedc32035104395388f050131de</model>
+        <model_id>8800dcedc32035104395388f050131de</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_8800dcedc32035104395388f050131de</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:43</sys_created_on>
+        <sys_id>80001021c36035104395388f05013109</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 22:30:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=80001021c36035104395388f05013109"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=80001021c36035104395388f05013109"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=1d6e9c03-48fa-449e-8e8f-1cd3810a696d,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="DevOpsEnv0DeploymentApprove">8800dcedc32035104395388f050131de</model>
+        <model_id>8800dcedc32035104395388f050131de</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_8800dcedc32035104395388f050131de</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:43</sys_created_on>
+        <sys_id>c4001021c36035104395388f0501310d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 22:30:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c4001021c36035104395388f0501310d"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c4001021c36035104395388f0501310d"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=14f4b26d-e041-4d68-866f-34217f98681d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>result</element>
+        <element_prototype display_value="Status Code" element="status_code" name="var__m_sys_flow_step_definition_output_07a762fb47222200b4fad7527c9a7129">a053077347622200b4fad7527c9a716e</element_prototype>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>result</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="DevOpsEnv0DeploymentApprove">8800dcedc32035104395388f050131de</model>
+        <model_id>8800dcedc32035104395388f050131de</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_8800dcedc32035104395388f050131de</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 22:30:20</sys_created_on>
+        <sys_id>f9899ca9c36035104395388f05013141</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 22:30:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f9899ca9c36035104395388f05013141"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f9899ca9c36035104395388f05013141"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=8800dcedc32035104395388f050131de"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=8800dcedc32035104395388f050131de^sys_idNOT INd8001021c36035104395388f05013116"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="DevOpsEnv0DeploymentApprove">8800dcedc32035104395388f050131de</action_type_id>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:44</sys_created_on>
+        <sys_id>d8001021c36035104395388f05013116</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:48:44</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=d8001021c36035104395388f05013116"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_8800dcedc32035104395388f050131de^sys_idNOT IN0c00dcedc32035104395388f050131e9,8000dcedc32035104395388f050131e6,8400dcedc32035104395388f050131ed"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>deployment_id</element>
+        <help/>
+        <hint/>
+        <label>deployment_id</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_8800dcedc32035104395388f050131de</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:43</sys_created_on>
+        <sys_id>0c00dcedc32035104395388f050131e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="env0" source="x_snc_env0">b5c30fc6c31369504395388f05013114</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:48:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>tool</element>
+        <help/>
+        <hint/>
+        <label>tool</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_8800dcedc32035104395388f050131de</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:43</sys_created_on>
+        <sys_id>8000dcedc32035104395388f050131e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="env0" source="x_snc_env0">b5c30fc6c31369504395388f05013114</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:48:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>status</element>
+        <help/>
+        <hint/>
+        <label>status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_8800dcedc32035104395388f050131de</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:43</sys_created_on>
+        <sys_id>8400dcedc32035104395388f050131ed</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="env0" source="x_snc_env0">b5c30fc6c31369504395388f05013114</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:48:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_8800dcedc32035104395388f050131de"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_8800dcedc32035104395388f050131de^sys_idNOT IN88001021c36035104395388f0501310c,9c001021c36035104395388f05013111,f1899ca9c36035104395388f05013145"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_8800dcedc32035104395388f050131de</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:43</sys_created_on>
+        <sys_id>88001021c36035104395388f0501310c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="env0" source="x_snc_env0">b5c30fc6c31369504395388f05013114</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:48:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_8800dcedc32035104395388f050131de</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 21:48:44</sys_created_on>
+        <sys_id>9c001021c36035104395388f05013111</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="env0" source="x_snc_env0">b5c30fc6c31369504395388f05013114</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 21:48:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>result</element>
+        <help/>
+        <hint/>
+        <label>result</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_8800dcedc32035104395388f050131de</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>santosh.nagaraja@snc</sys_created_by>
+        <sys_created_on>2023-08-08 22:30:20</sys_created_on>
+        <sys_id>f1899ca9c36035104395388f05013145</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="env0" source="x_snc_env0">b5c30fc6c31369504395388f05013114</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="env0">b5c30fc6c31369504395388f05013114</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>santosh.nagaraja@snc</sys_updated_by>
+        <sys_updated_on>2023-08-08 22:30:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_8800dcedc32035104395388f050131de"/>
+    <sys_hub_action_type_definition action="UPDATE">
+        <sys_id>7645c425c32035104395388f05013104</sys_id>
+        <latest_snapshot>8800dcedc32035104395388f050131de</latest_snapshot>
+        <compiler_build>glide-utah-12-21-2022__patch4-hotfix2a-06-27-2023_07-11-2023_1218.zip</compiler_build>
+    </sys_hub_action_type_definition>
+</record_update>
